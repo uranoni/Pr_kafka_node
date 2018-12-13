@@ -3,7 +3,7 @@ var kafka = require('kafka-node'),
     client = new kafka.Client('120.105.129.50:2181'),
     producer = new Producer(client),
     payloads = [
-        { topic: 'topic', messages: ['hello world from nodejs'] }
+        { topic: 'topic', messages: ['hello'] }
     ];
 
 producer.on('ready', function () {
